@@ -25,8 +25,6 @@ $(function () {
     })
     // 주요뉴스 슬라이드
     const slide1 = new Swiper("#slide1", {
-        // loop: true,
-        // simulateTouch:false,
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -45,8 +43,6 @@ $(function () {
     });
     // 시민참여 슬라이드
     const slide2 = new Swiper("#slide2", {
-        // loop:true,
-        // simulateTouch:false,
         autoplay: {
             delay: 3500,
             disableOnInteraction: false,
@@ -66,7 +62,6 @@ $(function () {
     slide2.autoplay.stop();
     //@하단배너 3개씩
     const slideBanner = new Swiper("#slideBanner", {
-        // simulateTouch:false,
         loop: true,
         slidesPerView: 3,
         spaceBetween: 43,
@@ -116,11 +111,7 @@ $(function () {
             $(this).addClass('active').attr('aria-label', '자동재생 적용');
         }
     })
-    $('.sc-titleTab').click(function () {
-        $(this).addClass('on').siblings().removeClass('on');
-        target = $(this).data('target');
-        $(target).addClass('active').siblings().removeClass('active');
-    })
+    
     // 관련 사이트 메뉴 //
     $('.sc-related .rel-item').click(function (e) {
         e.preventDefault();

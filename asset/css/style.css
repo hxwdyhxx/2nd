@@ -258,10 +258,6 @@ h2.headline {
   color: #2292e9;
   font-size: 14px;
 }
-.header .search-area .wrap .input-text:-ms-input-placeholder {
-  color: #2292e9;
-  font-size: 14px;
-}
 .header .search-area .wrap .input-text::placeholder {
   color: #2292e9;
   font-size: 14px;
